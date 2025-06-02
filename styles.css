@@ -1,0 +1,60 @@
+:root {
+    --bg: #f8f8f8;
+    --fg: #222;
+    --tooltip-bg: rgba(0, 0, 0, 0.85);
+    --tooltip-fg: white;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    text-align: center;
+  }
+  
+  h1, #description {
+    margin: 10px;
+  }
+  
+  svg {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    height: auto;
+  }
+  
+  #tooltip {
+    position: absolute;
+    background: var(--tooltip-bg);
+    color: var(--tooltip-fg);
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 10;
+  }
+  
+  .tile {
+    stroke: #fff;
+    stroke-width: 0.5;
+    cursor: pointer;
+  }
+  
+  .tile:hover {
+    transform: scale(1.05);
+    fill: #f1f1f1;
+  }
+  
+  .tile-text {
+    pointer-events: none;
+    font-size: 10px;
+    fill: #000;
+  }
+  
+  .legend-item {
+    stroke: #333;
+  }
+  
